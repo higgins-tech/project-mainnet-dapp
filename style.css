@@ -1,0 +1,742 @@
+body{
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(0, 0, 0);
+    font-family: inter, sans-serif;
+    overflow-x: hidden;
+}
+
+.section1{
+    height: 100vh;
+}
+
+.navigationbox{
+    height: 60px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    transition: height 0.5s ease;
+    z-index: -1;
+
+}
+.navigation{
+    min-height: 60px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.subnavigation{
+    display: flex;
+    position: absolute;
+    right: 150px;
+    width: 150px;
+    font-weight: 700;
+    font-size: 15px;
+    justify-content: space-around;
+    height: 40px;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.logotext{
+    position: absolute;
+    left: 100px;
+    color: white;
+    font-weight: 700;
+    font-size: 23px;
+    cursor: pointer;
+}
+.sublogotext{
+    color: rgb(140, 12, 140);
+}
+.homeh3{
+    color: rgb(140, 12, 140);
+    cursor: pointer;
+}
+.homeh3:hover{
+    text-decoration: underline;
+}
+.connecth3{
+    color: white;
+    cursor: pointer;
+}
+.connecth3:hover{
+    text-decoration: underline;
+}
+
+.menubox{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    right: 20px;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    display: none;
+}
+.hiddenhome{
+    width: 100%;
+    color: rgb(140, 12, 140);
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: opacity 0.1s ease;
+    opacity: 0;
+    margin-top: 0px;
+}
+.hiddenconnect{
+    width: 100%;
+    color: grey;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: -10px;
+    margin-left: 10px;
+    opacity: 0;
+    transition: display 0.3s ease;
+}
+
+.heightchange{
+    height: 120px;
+}
+.displaychange{
+    opacity: 1;
+}
+
+.section1content{
+    background-color: black;
+    height: 715px;
+    display: flex;
+    position: relative;
+}
+
+.leftcontent{
+    max-width: 730px;
+    max-height: 715px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    justify-content: center;
+    color: white;
+}
+
+.leftcontent h3{
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.leftcontent h4{
+    font-weight: 500;
+    font-size: 19px;
+}
+
+
+.leftcontent button{
+    width: 150px;
+    color: white;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(140, 12, 140);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.rightcontent{
+    width: 342px;
+    height: 600px;
+    background-color: black;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.section2{
+    max-width: 100vw;
+    height: 1410px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondsectionheader{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+
+}
+
+.actionsbox{
+    background-color: black;
+    width: 70vw;
+    height: 1320px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+
+}
+
+.actions{
+    width: 330px;
+    height: 180px;
+    background-color: #191f2f;
+    padding-left: 10px;
+    color: white;
+    padding-top: 10px;
+    border-radius: 8px;
+    padding-right: 5px;
+}
+
+.actions h3{
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.actions button{
+    width: 70px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.actions h4{
+    font-weight: 500;
+    margin-top: -5px;
+}
+.ri-token-swap-fill{
+    color: rgb(140, 12, 140);
+    font-size: 40px;
+}
+
+.ri-gift-2-fill{
+    color: rgb(140, 12, 140);
+    font-size: 40px;
+}
+
+.ri-exchange-dollar-line{
+    color: rgb(140, 12, 140);
+    font-size: 40px;
+}
+
+.ri-percent-fill{
+    color: rgb(140, 12, 140);
+    font-size: 40px;
+}
+
+.ri-exchange-funds-line{
+    color: rgb(140, 12, 140);
+    font-size: 40px;
+}
+
+.ri-exchange-box-fill{
+    color: rgb(140, 12, 140);
+    font-size: 40px;
+}
+
+.ri-money-dollar-circle-fill{
+    color: rgb(140, 12, 140);
+    font-size: 40px;
+}
+
+.ri-exchange-dollar-line{
+    color: rgb(140, 12, 140);
+    font-size: 40px;
+}
+
+.ri-link{
+    color: rgb(140, 12, 140);
+    font-size: 40px;
+}
+
+.ri-login-box-line{
+    color: rgb(140, 12, 140);
+    font-size: 40px;
+}
+
+.ri-file-list-3-line{
+    color: rgb(140, 12, 140);
+    font-size: 40px;
+}
+
+.ri-device-recover-fill{
+    color: rgb(140, 12, 140);
+    font-size: 40px;
+}
+
+.ri-error-warning-fill{
+    color: rgb(140, 12, 140);
+    font-size: 40px;
+}
+
+.ri-loader-2-fill{
+    color: rgb(140, 12, 140);
+    font-size: 40px;
+}
+
+.ri-gift-fill{
+    color: rgb(140, 12, 140);
+    font-size: 40px;
+}
+
+.ri-nft-fill{
+    color: rgb(140, 12, 140);
+    font-size: 40px;
+}
+
+.ri-lock-2-fill{
+    color: rgb(140, 12, 140);
+    font-size: 40px;
+}
+
+.fixedbox1{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: fixed;
+    z-index: 10;
+    backdrop-filter: blur(3px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixedbox1content{
+    width: 300px;
+    height: 440px;
+    background-color: black;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border-radius: 20px;
+}
+
+.connectbox{
+    display: flex;
+    width: 300px;
+    background-color: transparent;
+    height: 35px;
+    margin-top: 5px;
+    align-items: center;
+    font-size: 17px;
+}
+
+.connectbox h4{
+    font-weight: 500;
+    margin-left: 90px;
+    margin-right: 50px;
+    letter-spacing: 0.5px;
+}
+
+.ri-close-large-line{
+    cursor: pointer;
+}
+
+.fixedlogobox{
+    width: 300px;
+    height: 95px;
+    background-color: transparent;
+    margin-top: 37px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fixedlogobox img{
+    width: 50px;
+    border-radius: 10px;
+    height: 50px;
+}
+
+.fixedlogobox h4{
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.fixedlogobox h5{
+    margin-top: -10px;
+    font-weight: 600;
+}
+
+.walletsbox{
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.walletsboxcontent{
+    width: 275px;
+    height: 40px;
+    background-color: #191f2f;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.walletsboxcontent img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.walletsboxcontent h5{
+    font-weight: 600;
+}
+
+.fixedbox2content{
+    width: 300px;
+    height: 380px;
+    background-color: black;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border-radius: 20px;
+}
+
+
+.loadingcircle{
+    width: 60px;
+    height: 60px;
+    margin-top: 50px;
+    border-radius: 50%;
+    border-left: none;
+    border-top: none;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: linear ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.fixedbox3content{
+    width: 300px;
+    height: 460px;
+    background-color: black;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border-radius: 20px;
+}
+
+
+.exclamation{
+    width: 45px;
+    height: 45px;
+    border: 5px solid red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 50px;
+    color: red;
+    font-weight: 800;
+}
+
+.fixedbox3butttons{
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.fixedbox3butttons button{
+    width: 140px;
+    height: 30px;
+    color: white;
+    background-color: rgb(71, 133, 191);
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.fixedbox3content{
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+}
+
+.fixedbox4content{
+    width: 300px;
+    height: 530px;
+    background-color: black;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border-radius: 20px;
+}
+
+.fixedbox4logo{
+    width: 300px;
+    height: 95px;
+    background-color: transparent;
+    margin-top: 37px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fixedbox4logo img{
+    width: 50px;
+    border-radius: 10px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.phrasetype{
+    width: 125px;
+    height: 25px;
+    margin-top: 50px;
+    margin-left: -150px;
+    border-radius: 10px;
+    background-color: #191f2f;
+    color: white;
+    border: none;
+}
+
+.phrasebox{
+    width: 270px;
+    height: 150px;
+    margin-top: 10px;
+    background-color: #191f2f;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.phrasebox::placeholder{
+    color: rgb(139, 134, 134);
+    font-family: inter, sans-serif; 
+}
+
+.phrasesecure{
+    font-weight: 100;
+    font-size: 11px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.connectwallet{
+    width: 270px;
+    border-radius: 20px;
+    height: 30px;
+    background-color: rgb(71, 133, 191);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.securetext{
+    font-weight: 100;
+    font-size: 11px;
+    text-align: center;
+}
+
+.fixedbox5content{
+    width: 300px;
+    height: 530px;
+    background-color: black;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border-radius: 20px;
+}
+
+.inputbox{
+    width: 270px;
+    height: 35px;
+    background-color: #191f2f;
+    border-radius: 10px;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ri-search-2-line{
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+.searchbar{
+    width: 230px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.searchbar::placeholder{
+    font-size: 15px;
+    color: white;
+}
+
+.logosbox{
+    width: 300px;
+    height: 500px;
+    background-color: black;
+    margin-top: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    overflow: auto;
+}
+
+.logosbox::-webkit-scrollbar{
+    display: none;
+}
+
+.walletlogo{
+    width: 55px;
+    height: 90px;
+    background-color: #191f2f;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.walletlogo img{
+    width: 40px;
+    height: 40px;
+    margin-top: 7px;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+
+.walletlogo h5{
+    margin-top: 5px;
+
+    margin-left: 6px;
+    text-overflow: ellipsis;
+}
+
+.fixedbox6content{
+    width: 300px;
+    height: 530px;
+    background-color: black;
+    border-radius: 20px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fixedbox6content img{
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: -40px;
+}
+
+.fixedbox6content h2{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.connectbox{
+    color: white;
+}
+
+
+@media (max-width: 1100px){
+    .section1content{
+        height: 800px;
+    }
+    .section1content{
+        display: flex;
+        justify-content: center;
+    }
+
+    .section2{
+        margin-top: 150px;
+        height: 3890px;
+    }
+
+    .leftcontent{
+        position: absolute;
+        top: 650px;
+        max-width: 600px;
+        margin-top: -39px;
+        display: flex;
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    .rightcontent{
+        margin-top: 10px;
+    }
+    .logotext{
+        left: 10px;
+    }
+    .menubox{
+        display: flex;
+    }
+    .subnavigation{
+        display: none;
+    }
+
+    .actions{
+        min-width: 330px;
+    }
+
+    .actionsbox{
+        height: 3790px;
+    }
+}

